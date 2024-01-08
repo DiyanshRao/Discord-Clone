@@ -33,7 +33,6 @@ const ServerIdLayout = async ({
   return (
     <div className='h-full'>
       <div className='fixed hidden md:flex w-60 h-full flex-col z-20 inset-y-0'>
-        {/* @ts-expect-error Server Component */}
         <ServerSidebar serverId={params.serverId} />
       </div>
       <main className='h-full md:pl-60'>{children}</main>

@@ -14,10 +14,9 @@ export const MobileToggle = ({ serverId }: { serverId: string }) => {
       </SheetTrigger>
       <SheetContent side='left' className='p-0 flex gap-0'>
         <div className='w-[72px]'>
-          {/* @ts-expect-error Server Component */}
           <NavigationSidebar />
         </div>
-        {/* @ts-expect-error Server Component */}
+
         <ServerSidebar serverId={serverId} />
       </SheetContent>
     </Sheet>
